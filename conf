@@ -7,7 +7,7 @@ else
 	if echo $(id) |grep sudo > /dev/null
 	then
 	clear
-	echo -e "\033[1;37mVoce não é root"
+	echo -e "\033[1;37mVoce nÃ£o Ã© root"
 	echo -e "\033[1;37mSeu usuario esta no grupo sudo"
 	echo -e "\033[1;37mPara virar root execute \033[1;31msudo su\033[1;37m ou execute \033[1;31msudo $0\033[0m"
 	exit
@@ -19,7 +19,7 @@ else
 fi
 
 cat -n /etc/issue |grep 1 |cut -d' ' -f6,7,8 |sed 's/1//' |sed 's/	//' > /etc/so 
-echo -e "\033[1;31mPara a instalação ser correta é preciso o ip.
+echo -e "\033[1;31mPara a instalaÃ§Ã£o ser correta Ã© preciso o ip.
 Digite o ip !\033[0m"
 read -p ": " ip
 clear
